@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+</head>
+
+<body class="body">
+    <header class="navbar">
+        <div class="logo-cont">
+            <img class="logo" src="./assets/logo.png">
+            <span class="logo-text">Picture Perfect</span>
+        </div>
+        <ul class="nav-list">
+            <li><a class="list-item" href="index.html">Home</a></li>
+            <li><a class="list-item" href="About.html">About</a></li>
+            <li><a class="list-item active" href="Gallery.html">Gallery</a></li>
+            <li><a class="list-item" href="PriceList.html">Price-List</a></li>
+            <li><a class="list-item" href="login.php">Login</a></li>
+            <li><a class="list-item" href="Contact.html">Contact Us</a></li>
+           
+
+        </ul>
+    </header>
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="wedding">Wedding</li>
+            <li class="buttons" data-filter="pre-wedding">Pre-Wedding</li>
+            <li class="buttons" data-filter="pre-baby-shoot">Pre-Baby-Shoot</li>
+            <li class="buttons" data-filter="newborn-baby-shoot">Newborn-Baby-Shoot</li>
+
+        </ul>
+
+        <div class="image-container">
+
+            <a href="./assets/ws1.jpg" class="image wedding">
+                <img src="./assets/ws1.jpg" alt="">
+            </a>
+            <a href="./assets/ws2.jpg" class="image wedding">
+                <img src="./assets/ws2.jpg" alt="">
+            </a>
+            <a href="./assets/ws3.jpg" class="image wedding">
+                <img src="./assets/ws3.jpg" alt="">
+            </a>
+            <a href="./assets/ws4.jpg" class="image wedding">
+                <img src="./assets/ws4.jpg" alt="">
+            </a>
+
+            <a href="./assets/pws1.jpg" class="image pre-wedding">
+                <img src="./assets/pws1.jpg" alt="">
+            </a>
+            <a href="./assets/pws2.jpg" class="image pre-wedding">
+                <img src="./assets/pws2.jpg" alt="">
+            </a>
+            <a href="./assets/pws3.jpg" class="image pre-wedding">
+                <img src="./assets/pws3.jpg" alt="">
+            </a>
+            <a href="./assets/pws4.jpg" class="image pre-wedding">
+                <img src="./assets/pws4.jpg" alt="">
+            </a>
+            <a href=".\assets\pws5.jpeg" class="image pre-wedding">
+                <img src=".\assets\pws5.jpeg" alt="">
+            </a>
+
+            <a href="./assets/pbs1.jpg" class="image pre-baby-shoot">
+                <img src="./assets/pbs1.jpg" alt="">
+            </a>
+            <a href="./assets/pbs2.jpg" class="image pre-baby-shoot">
+                <img src="./assets/pbs2.jpg" alt="">
+            </a>
+            <a href="./assets/pbs3.jpg" class="image pre-baby-shoot">
+                <img src="./assets/pbs3.jpg" alt="">
+            </a>
+            <a href="./assets/pbs4.jpg" class="image pre-baby-shoot">
+                <img src="./assets/pbs4.jpg" alt="">
+            </a>
+
+            <a href="./assets/abs1.jpg" class="image newborn-baby-shoot">
+                <img src="./assets/abs1.jpg" alt="">
+            </a>
+            <a href="./assets/abs2.jpg" class="image newborn-baby-shoot">
+                <img src="./assets/abs2.jpg" alt="">
+            </a>
+            <a href="./assets/abs3.jpg" class="image newborn-baby-shoot">
+                <img src="./assets/abs3.jpg" alt="">
+            </a>
+            <a href="./assets/abs4.jpg" class="image newborn-baby-shoot">
+                <img src="./assets/abs4.jpg" alt="">
+            </a>
+
+        </div>
+    </div>
+        <style>
+            .body {
+                margin: 0;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+                    url(./assets/bg.png);
+                background-size: cover;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                padding: 0 50px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .navbar {
+                width: 95%;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-list {
+                display: flex;
+                flex: 0.6;
+                justify-content: space-evenly;
+                padding: 10px;
+                list-style: none;
+                text-align: center;
+            }
+
+            .list-item {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+                margin: 0 10px;
+                font-family: cursive;
+            }
+
+            .active {
+                text-decoration: none;
+                color: #cc9f5b;
+                font-size: 1.2rem;
+                margin: 0 10px;
+            }
+
+            .logo-cont {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .logo {
+                width: 17%;
+            }
+
+            .logo-text {
+                font-family: cursive;
+                color: #cc9f5b;
+                font-size: 1.5rem;
+            }
+
+            .main {
+                padding: 20px;
+                min-height: 83vh;
+                display: flex;
+                align-items: center;
+            }
+
+            .gallery {
+                min-height: 100vh;
+                margin-bottom: 100px;
+            }
+
+            .gallery .controls {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 20px 0;
+                list-style: none;
+            }
+
+            .gallery .controls .buttons {
+                height: 40px;
+                width: 200px;
+                background: #fff;
+                color: #666;
+                font-size: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                margin: 20px;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+                text-align: center;
+            }
+
+            .gallery .controls .buttons.active {
+                background: coral;
+                color: #fff;
+            }
+
+            .gallery .image-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .gallery .image-container .image {
+                height: 250px;
+                width: 350px;
+                overflow: hidden;
+                border: 2px solid whitesmoke;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+                margin: 20px;
+            }
+
+            .gallery .image-container .image img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .gallery .image-container .image:hover img {
+                transform: scale(1.4);
+            }
+
+
+            
+        </style>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+        $('.buttons').click(function () {
+
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var filter = $(this).attr('data-filter')
+
+            if (filter == 'all') {
+                $('.image').show(400);
+            } else {
+                $('.image').not('.' + filter).hide(200);
+                $('.image').filter('.' + filter).show(400);
+            }
+
+        });
+
+        $('.gallery').magnificPopup({
+
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+
+        });
+
+    });
+
+</script>
+
+</body>
+
+</html>

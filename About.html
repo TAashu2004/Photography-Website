@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Perfect</title>
+</head>
+
+
+<body class="body">
+  <header class="navbar">
+    <div class="logo-cont">
+      <img class="logo" src="./assets/logo.png">
+      <span class="logo-text">Picture Perfect</span>
+    </div>
+    <ul class="nav-list">
+      <li><a class="list-item" href="index.html">Home</a></li>
+      <li><a class="list-item active" href="About.html">About</a></li>
+      <li><a class="list-item" href="Gallery.html">Gallery</a></li>
+      <li><a class="list-item" href="PriceList.html">Price-List</a></li>
+      <li><a class="list-item" href="login.php">Login</a></li>
+      <li><a class="list-item" href="Contact.html">Contact Us</a></li>
+    </ul>
+  </header>
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container">
+      <img class="mainImg" src="assets/about img1.svg">
+      <div class="allText aboveText">
+        <p class="text-blk headingText">
+          Our Mission
+        </p>
+        <p class="text-blk subHeadingText">
+          An Artist Through the Lens
+        </p>
+        <p class="text-blk description">
+          A professional photographer i confident and dedicated photographer with experience in both professional and freelance photography.
+
+Great variety in order to tackle any photography job quickly and effectively.
+
+Intimately familiar taking high quality digital photographs, including framing, selecting and setting up lighting, 
+and determining advanced shutter and lens options. 
+Prioritizes communication on the job to avoid errors.
+
+        </p>
+        <a href="gallery.html"> 
+        <button class="explore">
+          Explore
+        </button>
+        
+      </a>
+    </div>
+    <div class="responsive-container-block Container bottomContainer">
+      <img class="mainImg" src="assets/about img2.svg">
+      <div class="allText bottomText">
+        <p class="text-blk headingText">
+          Our Vision
+        </p>
+        <p class="text-blk subHeadingText">
+          "If you can see it, you can shoot it."
+        </p>
+        <p class="text-blk description">
+          Photography is the art, science, and practice of capturing and creating images using a camera.
+           It is a versatile medium that allows individuals to express themselves creatively, document important events, 
+           and capture memories. Photography has been around for centuries, but it wasn't until the invention of the camera in the early
+           19th century that it became widely accessible to the general public.
+        </p>
+        <a href="gallery.html">
+        <button class="explore">
+          Explore
+        </button>
+      </a>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+    
+    .body {
+      margin: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+        url(./assets/bg.png);
+      background-size: cover;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .navbar {
+      width: 95%;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: flex;
+      flex: 0.6;
+      justify-content: space-evenly;
+      padding: 10px;
+      list-style: none;
+      text-align: center;
+    }
+
+    .list-item {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      margin: 0 10px;
+      font-family: cursive;
+    }
+
+    .active {
+      text-decoration: none;
+      color: #cc9f5b;
+      font-size: 1.2rem;
+      margin: 0 10px;
+    }
+
+    .logo-cont {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 17%;
+    }
+
+    .logo-text {
+      font-family: cursive;
+      color: #cc9f5b;
+      font-size: 1.5rem;
+    }
+
+    .main {
+      padding: 20px;
+      min-height: 83vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .cont {
+      display: flex;
+      width: 36%;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+      gap: 10px;
+    }
+
+    .title {
+      color: #ffd089;
+      font-size: 6rem;
+      text-align: center;
+      margin: 0px;
+    }
+
+    .subtitle {
+      flex: 1;
+      color: #ffffff;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+
+    .book-btn {
+      padding: 10px 15px;
+      background-color: #cc9f5b;
+      color: white;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1.3rem;
+      cursor: pointer;
+      align-self: center;
+    }
+
+
+
+
+    /*about us*/
+    * {
+  font-family: Nunito, sans-serif;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 99%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+.responsive-container-block.bigContainer {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImg {
+  color: black;
+  width: 50%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 7px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 4px solid orange;
+}
+
+.text-blk.headingText {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  color: wheat;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  text-decoration: underline;
+}
+
+.allText {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  width: 40%;
+  margin: 0 0 0 0;
+}
+
+.text-blk.subHeadingText {
+  color: blanchedalmond;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+.text-blk.description {
+  font-size: 25px;
+  line-height: 34px;
+  color: white;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+
+.explore {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(244, 152, 146);
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: outset;
+  border-right-style: outset;
+  border-bottom-style: outset;
+  border-left-style: outset;
+  border-top-color: rgb(244, 152, 146);
+  border-right-color: rgb(244, 152, 146);
+  border-bottom-color: rgb(244, 152, 146);
+  border-left-color: rgb(244, 152, 146);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  cursor: pointer;
+}
+
+.explore:hover {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 235, 234);
+  color: rgb(244, 152, 146);
+}
+
+.responsive-container-block.Container {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1320px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.responsive-container-block.Container.bottomContainer {
+  margin-top: 100px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  flex-direction: row-reverse;
+  margin: 100px auto 50px auto;
+}
+
+.allText.aboveText {
+  margin: 0 0 0 40px;
+}
+
+.allText.bottomText {
+  margin: 0 40px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .responsive-container-block.Container {
+    max-width: 850px;
+  }
+
+  .mainImg {
+    width: 55%;
+    height: auto;
+  }
+
+  .text-blk.description {
+    font-size: 20px;
+  }
+
+  .allText {
+    width: 40%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .text-blk.subHeadingText {
+    font-size: 22px;
+  }
+
+  .responsive-container-block.Container.bottomContainer {
+    margin: 80px auto 50px auto;
+  }
+
+  .responsive-container-block.Container {
+    max-width: 830px;
+  }
+
+  .allText.aboveText {
+    margin: 30px 0 0 40px;
+  }
+
+  .allText.bottomText {
+    margin: 30px 40px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainImg {
+    width: 90%;
+  }
+
+  .allText {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .responsive-container-block.Container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-blk.headingText {
+    text-align: center;
+  }
+
+  .text-blk.subHeadingText {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .text-blk.description {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .allText {
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .allText.aboveText {
+    margin: 40px 0 0 0;
+  }
+
+  .responsive-container-block.Container {
+    margin: 80px auto 50px auto;
+  }
+
+  .responsive-container-block.Container.bottomContainer {
+    margin: 50px auto 50px auto;
+  }
+
+  .allText.bottomText {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .responsive-container-block.Container {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mainImg {
+    width: 100%;
+  }
+
+  .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+
+  .text-blk.subHeadingText {
+    font-size: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .text-blk.description {
+    font-size: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .allText {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+}
+  </style>
+
+
+</body>
+
+
+</html>
